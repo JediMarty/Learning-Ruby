@@ -10,4 +10,4 @@ while i < arr_size
     i+=1
 end
 
-puts ("You numbers are: #{arr}")
+puts ("Your numbers are: #{arr}")
