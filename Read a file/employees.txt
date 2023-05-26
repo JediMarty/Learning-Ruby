@@ -1,0 +1,5 @@
+Sam - Baker, Male
+George - Assistant baker, Male
+Nikol - Secretary, Female
+Patty - Web developer, Female
+Jeremy - Guard, Male
