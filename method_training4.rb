@@ -1,10 +1,10 @@
 def greater(arr)
-    i = 0
+   
     arr.each do |idx|
-       if arr[i] > 5
-         puts arr[i]
+       if idx > 5
+         puts idx
         end
-        i +=1
+     
     end
     
   end
