@@ -7,7 +7,7 @@ class Pokemon
         @power = power
     end
        
-    def >(other)
+    def fight(other)
         if self.power > other.power
             puts "You hit with #{self.ability}"
         else
@@ -19,6 +19,6 @@ end
 
 #Creating two pokemons!
 creature1=Pokemon.new("Hitmontop","Cyclone Kick", 100) 
-creature2=Pokemon.new("Charmander","Flare", 30)
+creature2=Pokemon.new("Charmander","Flare", 300)
 
-creature1>creature2
+creature1.fight(creature2)
