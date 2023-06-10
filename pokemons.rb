@@ -29,12 +29,18 @@ creature1=Pokemon.new("Pikachu","ENERGY", 90)
 creature2=Pokemon.new("Hitmontop","Cyclone Kick", 100) 
 creature3=Pokemon.new("Charmander","Flare", 30)
 
-if choice == "1"
-    choice = creature2
-else choice == "2"
-   
-    choice = creature3
+def yourchoice(choice,c1,c2,c3)
+    
+    if choice == "1"
+        choice = c2
+    
+    else choice == "2"
+        choice = c3
+    end
+
+    c1.fight(choice)
+
 end
 
-creature1.fight(choice)
+yourchoice(choice,creature1,creature2,creature3)
 
