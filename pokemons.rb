@@ -7,18 +7,34 @@ class Pokemon
         @power = power
     end
        
-    def fight(other)
-        if self.power > other.power
-            puts "You hit with #{self.ability}"
+    def fight(choice)
+        if self.power > choice.power
+            puts "You got DAMAGE from #{self.name}"
         else
-            puts "You got DAMAGE from #{other.ability}"
+            puts "You hit #{self.name} with #{choice.ability}"
         end
     end
     
 end
 
-#Creating two pokemons!
-creature1=Pokemon.new("Hitmontop","Cyclone Kick", 100) 
-creature2=Pokemon.new("Charmander","Flare", 300)
+choice = ""
 
-creature1.fight(creature2)
+puts "Choose you pokemon!"
+puts "1) Hitmontop | 2) Charmander"
+choice = gets.chomp()
+
+
+#Creating two pokemons!
+creature1=Pokemon.new("Pikachu","ENERGY", 90) 
+creature2=Pokemon.new("Hitmontop","Cyclone Kick", 100) 
+creature3=Pokemon.new("Charmander","Flare", 30)
+
+if choice == "1"
+    choice = creature2
+else choice == "2"
+   
+    choice = creature3
+end
+
+creature1.fight(choice)
+
