@@ -17,7 +17,7 @@ class Pokemon
     
 end
 choice = 3
-while choice >= 3
+while ((choice >= 3) or (choice <=0))
 
 
 
@@ -45,4 +45,5 @@ def yourchoice(choice,c1,c2,c3)
 end
 
 yourchoice(choice,creature1,creature2,creature3)
+
 
