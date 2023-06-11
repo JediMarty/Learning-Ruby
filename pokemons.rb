@@ -16,13 +16,15 @@ class Pokemon
     end
     
 end
+choice = 3
+while choice >= 3
 
-choice = ""
 
-puts "Choose you pokemon!"
-puts "1) Hitmontop | 2) Charmander"
-choice = gets.chomp()
 
+    puts "Choose you pokemon!"
+    puts "1) Hitmontop | 2) Charmander"
+    choice = gets.chomp().to_i
+end
 
 #Creating two pokemons!
 creature1=Pokemon.new("Pikachu","ENERGY", 90) 
@@ -31,10 +33,10 @@ creature3=Pokemon.new("Charmander","Flare", 30)
 
 def yourchoice(choice,c1,c2,c3)
     
-    if choice == "1"
+    if choice.to_s == "1"
         choice = c2
     
-    else choice == "2"
+    else choice.to_s == "2"
         choice = c3
     end
 
