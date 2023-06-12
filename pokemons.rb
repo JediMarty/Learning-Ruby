@@ -16,10 +16,10 @@ class Pokemon
     end
     
 end
+
 choice = 3
-while ((choice >= 3) or (choice <=0))
 
-
+while (!(choice == 2 or choice == 3))
 
     puts "Choose you pokemon!"
     puts "1) Hitmontop | 2) Charmander"
@@ -45,5 +45,6 @@ def yourchoice(choice,c1,c2,c3)
 end
 
 yourchoice(choice,creature1,creature2,creature3)
+
 
 
