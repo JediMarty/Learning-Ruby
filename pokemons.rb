@@ -17,9 +17,9 @@ class Pokemon
     
 end
 
-choice = 3
+choice = 0
 
-while (!(choice == 2 or choice == 3))
+while (!(choice == 1 or choice == 2))
 
     puts "Choose you pokemon!"
     puts "1) Hitmontop | 2) Charmander"
