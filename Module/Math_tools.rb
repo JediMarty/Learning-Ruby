@@ -14,4 +14,14 @@ module MTools
         puts "Max number = #{max}"
     end
 
+    def arr_min(arr)
+        min = arr[0]
+        for idx in arr
+            if idx < min
+                min = idx
+            end
+        end
+        puts "Min number = #{min}"
+    end
+       
 end
