@@ -4,12 +4,18 @@ module MTools
         print x**y
     end
 
-    def arr_greater(arr)
+    def arr_max(arr)
+        max = 0
         arr.each do |idx|
-           if idx > 5
-             puts idx
+           if idx > max
+            max = idx
             end
         end
+        puts "Max number = #{max}"
     end
 
 end
+
+arr = [1,2,3]
+include MTools
+MTools.arr_max(arr)
