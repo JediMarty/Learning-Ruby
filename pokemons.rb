@@ -26,7 +26,7 @@ while (!(choice == 1 or choice == 2))
     choice = gets.chomp().to_i
 end
 
-#Creating two pokemons!
+#Creating three pokemons!
 creature1=Pokemon.new("Pikachu","ENERGY", 90) 
 creature2=Pokemon.new("Hitmontop","Cyclone Kick", 100) 
 creature3=Pokemon.new("Charmander","Flare", 30)
